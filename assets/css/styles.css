@@ -1,0 +1,140 @@
+/* Link de fonte Roboto importada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Estilização para todo o documento html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Variável de cor definida */
+:root {
+    --text-color:#093F3D;
+}
+
+    /* ESTILIZAÇÃO DO BODY E SUAS PARTES  */
+body {
+    background-color:cyan;
+}
+
+.container-header {
+    display: flex;
+    justify-content:space-between;
+    margin: 3rem 6rem 6rem;
+    
+}
+
+.container-header h1 {
+    font-weight: 500;
+    color: #093F3D;
+    font-size: 35px;
+ 
+}
+
+.navbar a {
+    margin-left: 3rem;
+    font-size: 17px;
+    cursor: pointer;
+    outline: 2px solid var(--text-color);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.img {
+    max-width: 100%; 
+    max-height: 400px; 
+    float: right;
+    mix-blend-mode: multiply;
+}
+
+.container-section h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.container-section p {
+    font-size: 17px;
+    line-height: 2.3;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.container-form {
+    margin-top: 30px; 
+    padding-bottom: 30px; 
+    background-image: linear-gradient(cyan, #093F3D);
+    padding: 20px; 
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container-form h2 {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+.contact-input {
+    margin-bottom: 2px; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%; 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box;
+    background-color:lightcyan;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#submit {
+    width:30%; 
+    padding: 5px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+#submit:hover {
+    background-color: #0056b3;
+    transition: 0.5s; 
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.navbar a:hover {
+   background-color: var(--text-color);
+   color: cyan;
+   transition: 0.5s;
+}
